@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flashcard - JS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Flashcards</h1>
+            </nav>
+        </header>
+
+        <main>
+            <div class="card_creator">
+                <div class="titulo_card_creator">
+                    <h2>Criar Flashcard</h2>
+                </div>
+                <div class="corpo_card_creator">
+                    <label for="questao" style="color: #FDFFFC;">Questão</label>
+                    <textarea id="questao" placeholder="Quem descobriu o Brasil?"></textarea>
+                    <label for="resposta" style="color: #FDFFFC;">Resposta</label>
+                    <textarea id="resposta" placeholder="Alexandre de Moraes"></textarea>
+                </div>
+                <div class="btns_card_creator">
+                    <button class="btn" onclick="criarCard()">Salvar</button>
+                    <button class="btn">Resetar</button>
+                    <button class="btn" onclick="deletarCards()">Deletar cards</button>
+                </div>
+            </div>
+        </main>
+
+        <section class="section_flashcards">
+
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
